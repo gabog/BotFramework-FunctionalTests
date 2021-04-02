@@ -25,15 +25,3 @@ steps:
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: build folder'
-  inputs:
-    PathtoPublish: build
-    ArtifactName: build
-
-- powershell: |
-   cd ..
-   ls -R
-  displayName: 'Dir workspace'
-  continueOnError: true
-  condition: succeededOrFailed()
