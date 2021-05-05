@@ -52,14 +52,14 @@ stages:
           variables:
             BuildIdSuffix: "${{ parameters.buildIdSuffix }}"
           steps:
-            - template: configureConsumers.yml
-              parameters:
-                appIds: "${{ parameters.appIds }}"
-                azureSubscription: "${{ parameters.azureSubscription }}"
-                keyVault: "${{ parameters.keyVault }}"
-                resourceGroup: "${{ parameters.resourceGroup }}"
-                resourceSuffix: "${{ parameters.resourceSuffix }}$(BUILDIDSUFFIX)"
-                scenario: "${{ scenario.name }}"
+            #- template: configureConsumers.yml
+            #  parameters:
+            #    appIds: "${{ parameters.appIds }}"
+            #    azureSubscription: "${{ parameters.azureSubscription }}"
+            #    keyVault: "${{ parameters.keyVault }}"
+            #    resourceGroup: "${{ parameters.resourceGroup }}"
+            #    resourceSuffix: "${{ parameters.resourceSuffix }}$(BUILDIDSUFFIX)"
+            #    scenario: "${{ scenario.name }}"
 
             - task: UseDotNet@2
               displayName: "Use .Net Core sdk 3.1.x"
