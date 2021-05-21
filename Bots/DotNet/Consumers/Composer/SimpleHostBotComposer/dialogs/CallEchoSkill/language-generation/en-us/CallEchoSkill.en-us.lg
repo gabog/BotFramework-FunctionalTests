@@ -1,45 +1,51 @@
 [import](common.lg)
 
-# ChoiceInput_Prompt_mE6pFA()
-- What skill would you like to call?
-# SendActivity_4gk8oF()
-- We shouldn't hit this because we have validation in the prompt
-# ChoiceInput_Prompt_Cm5lFb()
-- What delivery mode would you like to use?
-# TextInput_Prompt_GQavpV()
-- Type anything to send to the skill.
-# BeginSkill_Activity_iVt04z()
+# ChoiceInput_Prompt_AtuOWj()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = What delivery mode would you like to use?
 ]
-# BeginSkill_Activity_SMZQkv()
+
+# ChoiceInput_Prompt_DIABs2()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = What skill would you like to call?
 ]
-# BeginSkill_Activity_57wwb7()
+
+# SendActivity_3NY1Ax()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = We shouldn't hit this because we have validation in the prompt
 ]
-# BeginSkill_Activity_DjyTJf()
+
+# SendActivity_XZ3yPH()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = Call ${dialog.selectedSkill}
 ]
-# BeginSkill_Activity_cVFpif()
+
+# SendActivity_ArYRSb()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = Call ${dialog.selectedSkill}
 ]
-# BeginSkill_Activity_5j6nOJ()
+
+# SendActivity_XnnL1x()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = Call ${dialog.selectedSkill}
 ]
-# BeginSkill_Activity_8YZF62()
+
+# SendActivity_OA8eqL()
 [Activity
-    Text = ${dialog.firstUtterance}
-    DeliveryMode=${dialog.deliveryMode}
+    Text = Call ${dialog.selectedSkill}
+]
+
+# SendActivity_d97EyQ()
+[Activity
+    Text = Call ${dialog.selectedSkill}
+]
+
+# SendActivity_Sv1pC3()
+[Activity
+    Text = Call ${dialog.selectedSkill}
+]
+
+# SendActivity_xDhAko()
+[Activity
+    Text = Call ${dialog.selectedSkill}
 ]
