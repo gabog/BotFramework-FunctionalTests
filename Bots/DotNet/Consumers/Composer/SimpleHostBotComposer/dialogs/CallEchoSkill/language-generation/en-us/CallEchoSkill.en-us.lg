@@ -15,37 +15,42 @@
     Text = We shouldn't hit this because we have validation in the prompt
 ]
 
-# SendActivity_XZ3yPH()
+# BeginSkill_Activity_KKS0wY()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = ${dialog.firstUtterance}
 ]
 
-# SendActivity_ArYRSb()
+# TextInput_Prompt_nJf5rj()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = Type anything to send to the skill.
 ]
 
-# SendActivity_XnnL1x()
+# BeginSkill_Activity_92WLGJ()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = ${dialog.firstUtterance}
 ]
 
-# SendActivity_OA8eqL()
+# BeginSkill_Activity_9zIod8()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = ${dialog.firstUtterance}
 ]
 
-# SendActivity_d97EyQ()
+# BeginSkill_Activity_GHbR47()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = ${dialog.firstUtterance}
 ]
 
-# SendActivity_Sv1pC3()
+# BeginSkill_Activity_fXOB92()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = ${dialog.firstUtterance}
 ]
 
-# SendActivity_xDhAko()
+# BeginSkill_Activity_aEVlOJ()
 [Activity
-    Text = Call ${dialog.selectedSkill}
+    Text = ${dialog.firstUtterance}
+]
+
+# BeginSkill_Activity_WnhW7c()
+[Activity
+    Text = ${dialog.firstUtterance}
 ]

@@ -70,6 +70,21 @@
           ]
         },
         {
+          "$kind": "Microsoft.TextInput",
+          "$designer": {
+            "id": "nJf5rj"
+          },
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "prompt": "${TextInput_Prompt_nJf5rj()}",
+          "property": "dialog.firstUtterance"
+        },
+        {
           "$kind": "Microsoft.SwitchCondition",
           "$designer": {
             "id": "b3M6yt"
@@ -80,11 +95,18 @@
               "value": "EchoSkillBotComposerDotNet",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "XZ3yPH"
+                    "id": "KKS0wY"
                   },
-                  "activity": "${SendActivity_XZ3yPH()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotComposerDotNet'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotComposerDotNet'].msAppId",
+                  "activity": "${BeginSkill_Activity_KKS0wY()}"
                 }
               ]
             },
@@ -92,11 +114,18 @@
               "value": "EchoSkillBotDotNet",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "ArYRSb"
+                    "id": "92WLGJ"
                   },
-                  "activity": "${SendActivity_ArYRSb()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotDotNet'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotDotNet'].msAppId",
+                  "activity": "${BeginSkill_Activity_92WLGJ()}"
                 }
               ]
             },
@@ -104,11 +133,18 @@
               "value": "EchoSkillBotDotNet21",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "XnnL1x"
+                    "id": "9zIod8"
                   },
-                  "activity": "${SendActivity_XnnL1x()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotDotNet21'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotDotNet21'].msAppId",
+                  "activity": "${BeginSkill_Activity_9zIod8()}"
                 }
               ]
             },
@@ -116,11 +152,18 @@
               "value": "EchoSkillBotDotNetV3",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "OA8eqL"
+                    "id": "GHbR47"
                   },
-                  "activity": "${SendActivity_OA8eqL()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotDotNetV3'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotDotNetV3'].msAppId",
+                  "activity": "${BeginSkill_Activity_GHbR47()}"
                 }
               ]
             },
@@ -128,11 +171,18 @@
               "value": "EchoSkillBotJS",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "d97EyQ"
+                    "id": "fXOB92"
                   },
-                  "activity": "${SendActivity_d97EyQ()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotJs'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotJs'].msAppId",
+                  "activity": "${BeginSkill_Activity_fXOB92()}"
                 }
               ]
             },
@@ -140,11 +190,18 @@
               "value": "EchoSkillBotJSV3",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "Sv1pC3"
+                    "id": "aEVlOJ"
                   },
-                  "activity": "${SendActivity_Sv1pC3()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotJsv3'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotJsv3'].msAppId",
+                  "activity": "${BeginSkill_Activity_aEVlOJ()}"
                 }
               ]
             },
@@ -152,11 +209,18 @@
               "value": "EchoSkillBotPython",
               "actions": [
                 {
-                  "$kind": "Microsoft.SendActivity",
+                  "$kind": "Microsoft.BeginSkill",
                   "$designer": {
-                    "id": "xDhAko"
+                    "id": "WnhW7c"
                   },
-                  "activity": "${SendActivity_xDhAko()}"
+                  "activityProcessed": true,
+                  "botId": "=settings.MicrosoftAppId",
+                  "skillHostEndpoint": "=settings.skillHostEndpoint",
+                  "connectionName": "=settings.connectionName",
+                  "allowInterruptions": true,
+                  "skillEndpoint": "=settings.skill['echoSkillBotPython'].endpointUrl",
+                  "skillAppId": "=settings.skill['echoSkillBotPython'].msAppId",
+                  "activity": "${BeginSkill_Activity_WnhW7c()}"
                 }
               ]
             }
