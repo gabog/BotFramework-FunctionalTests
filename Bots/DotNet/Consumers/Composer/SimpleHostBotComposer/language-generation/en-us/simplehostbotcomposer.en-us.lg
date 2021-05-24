@@ -3,6 +3,7 @@
 # SendActivity_Greeting()
 [Activity
     Text = Hello and welcome!
+    InputHint = acceptingInput
 ]
 
 # SendActivity_DidNotUnderstand()
@@ -15,9 +16,12 @@
 # SendActivity_M2LqJr()
 [Activity
     Text = Received endOfConversation.\n\nCode: ${turn.activity.code}.
+    InputHint = acceptingInput
 ]
 
 # SendActivity_bgTcyn()
 [Activity
     Text = Back in the host bot.
+    InputHint = acceptingInput
 ]
+

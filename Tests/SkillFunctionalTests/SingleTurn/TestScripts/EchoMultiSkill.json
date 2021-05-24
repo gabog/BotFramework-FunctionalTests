@@ -12,7 +12,8 @@
         "type == 'message'",
         "from.role == 'bot'",
         "recipient.role == 'user'",
-        "text == 'Hello and welcome!'"
+        "text == 'Hello and welcome!'",
+        "inputHint == 'acceptingInput'"
       ]
     },
     {
