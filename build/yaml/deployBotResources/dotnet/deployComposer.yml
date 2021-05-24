@@ -26,7 +26,7 @@ parameters:
   - name: buildFolder
     displayName: Build Folder
     type: string
-    default: "build-dotnet"
+    default: "build-composer"
 
   - name: keyVault
     displayName: Key Vault name
