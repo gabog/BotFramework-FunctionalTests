@@ -68,8 +68,7 @@ Create a test script file using this [JSON schema](testscript.schema).
      "type == 'message'",
      "from.role == 'bot'",
      "recipient.role == 'user'",
-     "text == 'Hello and welcome!'",
-     "inputHint == 'acceptingInput'"
+     "text == 'Hello and welcome!'"
    ]
  },
  {
