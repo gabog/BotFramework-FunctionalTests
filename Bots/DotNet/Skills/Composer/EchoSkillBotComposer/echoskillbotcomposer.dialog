@@ -108,5 +108,8 @@
   ],
   "generator": "EchoSkillBotComposer.lg",
   "id": "EchoSkillBotComposer",
-  "recognizer": "EchoSkillBotComposer.lu.qna"
+  "recognizer": {
+    "$kind": "Microsoft.RegexRecognizer",
+    "intents": []
+  }
 }
