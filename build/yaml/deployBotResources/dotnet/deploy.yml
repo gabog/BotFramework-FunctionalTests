@@ -184,7 +184,6 @@ stages:
                   $result = @(Get-ChildItem "$(SOLUTIONDIR)packages\Microsoft.Bot.Builder.[0-9]*" -directory | Sort LastWriteTime -Descending)
                   $version = $result[0].Name.Replace("Microsoft.Bot.Builder.", "")
                   Write-Host "##vso[task.setvariable variable=BotBuilderVersionNumber]$($version)"
-          # End of DotNet v3 Install, Build
 
             # Zip bot
             - task: ArchiveFiles@2
@@ -196,6 +195,7 @@ stages:
                 archiveFile: '$(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}/${{ bot.name }}.zip'
                 replaceExistingArchive: true
                 verbose: true
+          # End of DotNet v3 Install, Build
 
           # Tag BotBuilder package version
           - template: ../common/tagBotBuilderVersion.yml

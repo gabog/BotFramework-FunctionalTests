@@ -116,17 +116,6 @@ stages:
                 $package = $data.Project.ItemGroup.PackageReference | Where-Object { $_.Include -eq "Microsoft.Bot.Builder.Dialogs.Adaptive.Runtime" }
                 Write-Host "##vso[task.setvariable variable=BotBuilderVersionNumber]$($package.version)"
 
-          # Zip bot
-          - task: ArchiveFiles@2
-            displayName: 'Zip bot'
-            inputs:
-              rootFolderOrFile: '$(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ bot.project.directory }}'
-              includeRootFolder: false
-              archiveType: 'zip'
-              archiveFile: '$(SYSTEM.DEFAULTWORKINGDIRECTORY)/${{ parameters.buildFolder }}/${{ bot.name }}/${{ bot.name }}.zip'
-              replaceExistingArchive: true
-              verbose: true
-
           # Tag BotBuilder package version
           - template: ../common/tagBotBuilderVersion.yml
             parameters:
